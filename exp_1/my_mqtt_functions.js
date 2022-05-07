@@ -26,7 +26,7 @@ function deviceTurned(value) {
     }
   }
   let turn = JSON.stringify(value);
-  client.publish(myTopic, tes);
+  client.publish(myTopic, turn);
 }
 
 
@@ -37,6 +37,10 @@ client.on('message', function(topic, message)
  let msg=JSON.parse(message); //Decode JSON string
  console.log(msg);
  besked = msg;
- turned = turn;
+
+ let value=JSON.parse(message);
+ console.log(value);
+ turned = value;
+ 
  // do your thing here when a message arrives--------
 });
