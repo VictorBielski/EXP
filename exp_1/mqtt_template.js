@@ -1,6 +1,7 @@
 // Variabler //
 let besked;
 let value = 0;
+let turned;
 let light = document.getElementById("lyskugle");
 
 //light.style.backgroundColor = "blue";
@@ -15,16 +16,9 @@ function draw() {
   circle(200, 200, 200, 200);
   sendMessage(mouseX);
   console.log("hej");
+  deviceTurned(value);
 }
 
 
-function deviceTurned() {
-  if (turnAxis === 'Y') {
-    if (value === 0) {
-      value = 255;
-    } else if (value === 255) {
-      value = 0;
-    }
-  }
-}
+
 
