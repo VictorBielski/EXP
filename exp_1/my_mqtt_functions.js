@@ -1,5 +1,5 @@
 
-const myTopic ="hipster";  //YOU MUST CHANGE THIS!
+const myTopic ="lightControl";  //YOU MUST CHANGE THIS!
 
 
 // --- CONNECTING--------------------------------------
