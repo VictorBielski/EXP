@@ -1,5 +1,5 @@
 
-const myTopic ="hipster";  //YOU MUST CHANGE THIS!
+const myTopic ="lysintensitet";  //YOU MUST CHANGE THIS!
 
 
 // --- CONNECTING--------------------------------------
@@ -23,7 +23,8 @@ function sendMessage(msg)
 client.on('message', function(topic, message) 
 {
  let msg=JSON.parse(message); //Decode JSON string
- console.log(msg);
- besked = msg;
- // do your thing here when a message arrives--------
+  console.log(msg);
+ 
+  // do your thing here when a message arrives--------
+   farve = msg;
 });
