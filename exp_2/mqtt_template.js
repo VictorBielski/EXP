@@ -1,0 +1,20 @@
+let slider;
+let val;
+let r = 0;
+let g = 0;
+let b = 0;
+
+function setup() {
+createCanvas(400,400);
+slider = createSlider(0, 255, 0);
+slider.position(10, 10);
+slider.size(200);
+}
+
+function draw() 
+{
+  val = slider.value();
+  background(val, val, 0);
+}
+
+// funktionen "bestemmer" farven på cirklen efter telefonens "position" på X aksen.
