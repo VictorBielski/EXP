@@ -1,18 +1,29 @@
 let slider;
-let val;
-let r = 0;
-let g = 0;
-let b = 0;
+let farve = 0;
 
 function setup() {
-//createCanvas(400, 400);
- // colorMode(RGB, 255);
-  slider = createSlider(0, 255, 0);
+  createCanvas(400, 400);
+  colorMode(HSB);
+  slider = createSlider(0, 360, 60, 40);
   slider.position(10, 10);
-  slider.size(200);
+  slider.style('width', '80px');
 }
 
 function draw() {
-    val = slider.value();
-    background(val, val, 0);
+  circle(200, 200, 200, 200);
+  fill(farve, 100, 100, 1);
 }
+
+function deviceTurned() {
+  if (turnAxis === 'X') {
+    farve = slider.value();
+    sendMessage(farve);
+  }
+}
+
+// 
+/*function deviceTurned() {
+  if (turnAxis === 'X') {
+
+  }
+}*/
