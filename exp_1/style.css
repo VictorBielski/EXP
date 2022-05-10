@@ -12,10 +12,11 @@
 
 /******** MAIN CONTAINER STYLES *******/
 
+main {
+    text-align: center;
+}
+
 h1 {
     text-align: center;
 }
 
-#defaultCanvas0 {
-    margin-left: 36%;
-}

@@ -3,7 +3,7 @@
 let farve = 0; // Variable - globally declared as my_mqtt_function can change it
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(400, 400);
   
 }
 
