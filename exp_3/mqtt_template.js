@@ -12,11 +12,11 @@ function setup() {
 function draw() {
   circle(200, 200, 200, 200);
   fill(farve, 100, 100, 1);
+  farve = slider.value();
 }
 
 function deviceTurned() {
   if (turnAxis === 'X') {
-    farve = slider.value();
     sendMessage(farve);
   }
 }
